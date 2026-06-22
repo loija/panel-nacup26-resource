@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于世界杯资料整理的说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f2f2f2;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      color: #2c3e50;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* 卡片系统 */
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.04);
+      border: 1px solid #e7e7e7;
+      padding: 2.2rem 2rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    .card-header {
+      font-weight: 500;
+      font-size: 1.3rem;
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid #ececec;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.2rem;
+      color: #1f2a36;
+    }
+
+    /* hero 开场 */
+    .hero {
+      text-align: center;
+      padding: 3rem 1.5rem 2rem;
+      background: #ffffff;
+      border-radius: 22px;
+      border: 1px solid #e7e7e7;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      margin-bottom: 2rem;
+    }
+
+    .hero .opening {
+      font-size: 1.25rem;
+      font-weight: 350;
+      color: #34495e;
+      max-width: 700px;
+      margin: 0 auto 0.5rem;
+    }
+
+    .hero .sub {
+      color: #607080;
+      font-size: 0.98rem;
+      margin-top: 0.6rem;
+    }
+
+    /* 特点列表 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .feature-item {
+      background: #f9f9fb;
+      border-left: 4px solid #b0c4d9;
+      padding: 1rem 1.2rem;
+      border-radius: 12px;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.01);
+    }
+
+    .feature-item strong {
+      display: block;
+      font-weight: 520;
+      color: #2c3e50;
+      margin-bottom: 0.3rem;
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+      color: #3d4a5a;
+    }
+
+    /* 段落间距 */
+    .text-block {
+      margin: 1.2rem 0;
+    }
+
+    .text-block p {
+      margin-bottom: 0.95rem;
+    }
+
+    .text-block a {
+      color: #2c5282;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd5e0;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .text-block a:hover {
+      color: #1a365d;
+      border-bottom-color: #2c5282;
+    }
+
+    /* FAQ 摘要风格 */
+    .faq-item {
+      border-bottom: 1px dashed #dde2e8;
+      padding: 1rem 0;
+    }
+
+    .faq-item:last-of-type {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      color: #1f2e3f;
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-a {
+      color: #415363;
+      font-size: 0.96rem;
+    }
+
+    .faq-a a {
+      color: #2c5282;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd5e0;
+    }
+
+    .faq-a a:hover {
+      border-bottom-color: #2c5282;
+    }
+
+    /* 温和结尾 */
+    .closing {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e7e7e7;
+      padding: 2rem 2rem;
+      text-align: center;
+      color: #3c4a5a;
+      font-size: 0.98rem;
+      margin-top: 1rem;
+    }
+
+    .closing p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* 响应式 */
+    @media (max-width: 680px) {
+      body {
+        padding: 1.2rem 0.8rem;
+      }
+
+      .card {
+        padding: 1.5rem 1.2rem;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+      }
+
+      .hero .opening {
+        font-size: 1.1rem;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .feature-item {
+        padding: 0.9rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 1.2rem 1rem;
+        border-radius: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 开场短句 -->
+  <div class="hero">
+    <div class="opening">
+      「一场赛事牵动几十亿人的目光，而资料整理是理解它的另一条路径。」
+    </div>
+    <div class="sub">
+      关于足球世界最高舞台的记录、梳理与索引
+    </div>
+  </div>
+
+  <!-- 承接段落：从整理索引切入 -->
+  <div class="card">
+    <div class="card-header">📋 从信息整理开始</div>
+    <div class="text-block">
+      <p>每届世界杯都会产生海量的赛程数据、队伍沿革、球员履历和裁判记录。无论是历史比分、参赛名单还是小组出线规则，信息来源分散且版本多样。我们习惯将分散的内容按赛季、大洲、时间线进行归类，以便于赛事研究者或爱好者快速定位到需要的片段。</p>
+      <p>这种整理工作不涉及预测或倾向性评价，而是尽量让不同来源的信息彼此印证。例如，同一届比赛的赛程可能因主办方调整而更新，此时标注数据版本和来源就变得必要。经过交叉比对的资料，对于写赛评、做复盘或单纯想回顾经典瞬间的人而言，都更有参考价值。</p>
+    </div>
+  </div>
+
+  <!-- 特点列表：资料索引的具体维度 -->
+  <div class="card">
+    <div class="card-header">🗂️ 索引的几个方向</div>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <strong>赛程与结果</strong>
+        <p>按年份和阶段排列的完整比赛列表，包含小组赛、淘汰赛及最终排名，附带比赛场地与观众人数。</p>
+      </div>
+      <div class="feature-item">
+        <strong>参赛队档案</strong>
+        <p>各国家队历届参赛记录、主帅更迭、预选赛晋级路径，以及每届的最终成绩。</p>
+      </div>
+      <div class="feature-item">
+        <strong>球员数据</strong>
+        <p>出场时间、进球、助攻、牌数等逐项统计，同时列出在俱乐部和国家队的赛季总览。</p>
+      </div>
+      <div class="feature-item">
+        <strong>规则与变化</strong>
+        <p>从小组积分规则到红黄牌停赛制度、加时赛及点球大战规则调整，逐届注明差异。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 场景 & 提示：实际使用场景 -->
+  <div class="card">
+    <div class="card-header">📎 常见使用场景</div>
+    <div class="text-block">
+      <p><strong>场景一：</strong>你正在写一篇关于1998年世界杯的回顾，需要确认某场1/4决赛的裁判和替补登场时间。通过按比赛ID索引的列表，可以快速调取当场的完整事件时间线。</p>
+      <p><strong>场景二：</strong>做一期关于“卫冕冠军小组赛出线率”的图表，需要汇总从1930年到最近一届的数据。此时一个按年份对齐的表格，能直接用于统计和可视化。</p>
+      <p><strong>场景三：</strong>比较两届不同主办国在小组赛阶段的平均进球数。整理出每届小组赛场次数、总进球数，就能做基础的对比分析。</p>
+      <p style="margin-top: 1rem; background: #f5f7fa; padding: 0.8rem 1rem; border-radius: 10px; color: #2e4059;">💡 建议：如果查找特定年份或球队，可以先检索最近一届的完整赛程页面，再按年份筛选。资料页面内通常附有更新日期，优先使用最新版本。</p>
+    </div>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="card">
+    <div class="card-header">❓ 常见问题摘要</div>
+    <div class="faq-item">
+      <div class="faq-q">Q：资料中的赛程时间以哪个时区为准？</div>
+      <div class="faq-a">通常使用比赛举办地当地时间，并在备注一栏标注对应的UTC偏移量。如果是跨届对比，可以考虑统一转为UTC时间。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：球员数据包含资格赛吗？</div>
+      <div class="faq-a">不包含。目前只整理决赛圈阶段的官方记录。资格赛数据源差异较大，暂未纳入主要索引。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：可以直接使用这些数据做公开项目吗？</div>
+      <div class="faq-a">可以。所有整理内容均来自公开可查的来源（FIFA官方报告、比赛报告、媒体存档等）。引用时建议标注来源比赛编号或文件名。</div>
+    </div>
+  </div>
+
+  <!-- 温和结尾 + 自然链接 -->
+  <div class="closing">
+    <p>足球世界的原始资料像一条不断延伸的河流，整理和索引只是帮我们更清楚地看见它的脉络。如果你需要查找某届比赛的具体数据，或想从历年变化中找出规律，<a href="https://panel-nacup26.com">世界杯</a>的索引页面可以作为一个起点。希望能帮你节省查找时间，也看到比赛背后更完整的叙事。</p>
+  </div>
+
+</div>
+</body>
+</html>
